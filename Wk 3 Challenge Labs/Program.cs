@@ -205,7 +205,7 @@ namespace Wk_3_Challenge_Labs
             #region Part4
             //Transition();
             Part(4);
-            StartPoint4:
+        StartPoint4:
             /*4. You are given a string s consisting only of uppercase English letters.
 
             You can apply some operations to this string where, in one operation, you can remove any occurrence of one of the substrings "AB" or "CD" from s.
@@ -231,15 +231,18 @@ namespace Wk_3_Challenge_Labs
 
             Explanation: We cannot do any operations on the string so the length remains the same.*/
 
-            Console.WriteLine("\nEnter an string and I will remove 'AB' and 'CD'");
+            Console.WriteLine("\nEnter an string and I will remove substrings 'AB' and 'CD'. " +
+                "\nThen return you the length of the remaining string.");
+            Console.Write("String: ");
             string s = Console.ReadLine().ToUpper();
+
+            Console.WriteLine(); // spacer
 
             Console.WriteLine($"The current string is: {s}");
 
             while (s.Contains("AB") || s.Contains("CD"))
             {
-                s = s.Replace("AB", "");
-                s = s.Replace("CD", "");
+                s = s.Replace("AB", "").Replace("CD", "");
 
                 Console.WriteLine($"The current string is: {s}");
             }
@@ -292,7 +295,7 @@ namespace Wk_3_Challenge_Labs
 
             ClosingMessage(); Console.ReadKey();
         }
-
+            
         // Part 1
         static bool IsPalindrome(string input)
         {
