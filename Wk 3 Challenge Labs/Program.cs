@@ -120,7 +120,7 @@ namespace Wk_3_Challenge_Labs
         //    #region Part3
         //    Transition();
         //    Part(3);
-        //StartPoint3:
+        //    StartPoint3:
 
         //    /*3. Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
         //    You may assume that each input would have exactly one solution, and you may not use the same element twice.
@@ -234,14 +234,14 @@ namespace Wk_3_Challenge_Labs
             Console.WriteLine("\nEnter an string and I will remove 'AB' and 'CD'");
             string s = Console.ReadLine().ToUpper();
 
-            Console.WriteLine($"The current string is: {s}\n");
+            Console.WriteLine($"The current string is: {s}");
 
             while (s.Contains("AB") || s.Contains("CD"))
             {
                 s = s.Replace("AB", "");
                 s = s.Replace("CD", "");
 
-                Console.WriteLine($"\nThe current string is: {s}");
+                Console.WriteLine($"The current string is: {s}");
             }
 
             Console.ForegroundColor = ConsoleColor.Yellow;
@@ -281,12 +281,15 @@ namespace Wk_3_Challenge_Labs
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.Message);
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("\nInvaild Answer Choice\n");
+                Console.ForegroundColor = ConsoleColor.White;
                 goto TryAgain;
             }
             
 
             #endregion
+
             ClosingMessage(); Console.ReadKey();
         }
 
