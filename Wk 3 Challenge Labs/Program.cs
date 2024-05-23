@@ -44,168 +44,168 @@ namespace Wk_3_Challenge_Labs
 
         static void Main(string[] args)
         {
-            #region Part1
-            Introduction();
-        StartPoint1:
+        //    #region Part1
+        //    Introduction();
+        //StartPoint1:
 
-            /*1. Given a string, write a method that checks if it is a palindrome (is read the same backward as forward). 
-             * Assume that string may consist only of lower-case letters.
+        //    /*1. Given a string, write a method that checks if it is a palindrome (is read the same backward as forward). 
+        //     * Assume that string may consist only of lower-case letters.
 
-            Expected input and output
-            IsPalindrome("eye") → true
-            IsPalindrome("home") → false*/
+        //    Expected input and output
+        //    IsPalindrome("eye") → true
+        //    IsPalindrome("home") → false*/
 
-            Console.WriteLine("I can check if a word is a palindrome");
-            Console.Write("Enter word: ");
-            string input = Console.ReadLine().ToLower(); // takes input and converts to lower case
+        //    Console.WriteLine("I can check if a word is a palindrome");
+        //    Console.Write("Enter word: ");
+        //    string input = Console.ReadLine().ToLower(); // takes input and converts to lower case
 
-            if (IsPalindrome(input))
-            {
-                Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine($"\n{IsPalindrome(input)}: '{input}' is a palindrome.\n");
-                Console.ForegroundColor = ConsoleColor.White;
-            }
-            else
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine($"\n{IsPalindrome(input)}: '{input}' is not a palindrome.\n");
-                Console.ForegroundColor = ConsoleColor.White;
-            }
+        //    if (IsPalindrome(input))
+        //    {
+        //        Console.ForegroundColor = ConsoleColor.Yellow;
+        //        Console.WriteLine($"\n{IsPalindrome(input)}: '{input}' is a palindrome.\n");
+        //        Console.ForegroundColor = ConsoleColor.White;
+        //    }
+        //    else
+        //    {
+        //        Console.ForegroundColor = ConsoleColor.Red;
+        //        Console.WriteLine($"\n{IsPalindrome(input)}: '{input}' is not a palindrome.\n");
+        //        Console.ForegroundColor = ConsoleColor.White;
+        //    }
 
-            while (true)
-            {
-                // ask user if they want to try again
-                Console.WriteLine("\nWant to try again? (Y / N)");
-                char answer = char.Parse(Console.ReadLine().ToUpper());
+        //    while (true)
+        //    {
+        //        // ask user if they want to try again
+        //        Console.WriteLine("\nWant to try again? (Y / N)");
+        //        char answer = char.Parse(Console.ReadLine().ToUpper());
 
-                // wants to continue
-                if (answer == 'Y')
-                {
-                    goto StartPoint1;
-                }
+        //        // wants to continue
+        //        if (answer == 'Y')
+        //        {
+        //            goto StartPoint1;
+        //        }
 
-                // does not want to continue
-                else if (answer == 'N')
-                {
-                    break;
-                }
+        //        // does not want to continue
+        //        else if (answer == 'N')
+        //        {
+        //            break;
+        //        }
 
-                // invaid entry
-                else
-                {
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("\nEnter valid character");
-                    Console.ForegroundColor = ConsoleColor.White;
-                    continue;
-                }
-            }
-            #endregion
+        //        // invaid entry
+        //        else
+        //        {
+        //            Console.ForegroundColor = ConsoleColor.Red;
+        //            Console.WriteLine("\nEnter valid character");
+        //            Console.ForegroundColor = ConsoleColor.White;
+        //            continue;
+        //        }
+        //    }
+        //    #endregion
 
-            #region Part2
-            Transition();
-            Part(2);
+        //    #region Part2
+        //    Transition();
+        //    Part(2);
 
-            /* 2. Sum digits in string
-            Given a string, write a method which returns sum of all digits 
-            in that string. Assume that string contains only single digits.
+        //    /* 2. Sum digits in string
+        //    Given a string, write a method which returns sum of all digits 
+        //    in that string. Assume that string contains only single digits.
 
-            Expected input and output
-            SumDigitsInString("1q2w3e") → 6 
-            SumDigitsInString("L0r3m.1p5um") → 9
-            SumDigitsInString("") → 0*/
+        //    Expected input and output
+        //    SumDigitsInString("1q2w3e") → 6 
+        //    SumDigitsInString("L0r3m.1p5um") → 9
+        //    SumDigitsInString("") → 0*/
 
 
-            #endregion
+        //    #endregion
 
-            #region Part3
-            Transition();
-            Part(3);
-        StartPoint3:
+        //    #region Part3
+        //    Transition();
+        //    Part(3);
+        //StartPoint3:
 
-            /*3. Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
-            You may assume that each input would have exactly one solution, and you may not use the same element twice.
+        //    /*3. Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+        //    You may assume that each input would have exactly one solution, and you may not use the same element twice.
 
-            Input: nums = [2,7,11,15], target = 9
-            Output: [0,1]
+        //    Input: nums = [2,7,11,15], target = 9
+        //    Output: [0,1]
 
-            Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].*/
+        //    Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].*/
 
-            Console.WriteLine("Enter an array and a target number and I will return the index of the two numbers that add up to the target number");
-            Console.Write("Please enter an array of integers separated by commas: ");
-            string input2 = Console.ReadLine(); //takes user's array as a temp string
+        //    Console.WriteLine("Enter an array and a target number and I will return the index of the two numbers that add up to the target number");
+        //    Console.Write("Please enter an array of integers separated by commas: ");
+        //    string input2 = Console.ReadLine(); //takes user's array as a temp string
 
-            // puts string into array and converts to int array
-            int[] array = input2.Split(',').Select(int.Parse).ToArray();
+        //    // puts string into array and converts to int array
+        //    int[] array = input2.Split(',').Select(int.Parse).ToArray();
 
-            // target number
-            Console.Write("Target Number: ");
-            int target = int.Parse(Console.ReadLine());
+        //    // target number
+        //    Console.Write("Target Number: ");
+        //    int target = int.Parse(Console.ReadLine());
 
-            //declare answer array and initalize array to {-1,-1} for if statement later
-            int[] answerArray = { -1, -1 };
+        //    //declare answer array and initalize array to {-1,-1} for if statement later
+        //    int[] answerArray = { -1, -1 };
 
-            //for loop to go through every variation
-            for (int i = 0; i < array.Length; i++)
-            {
-                for (int j = i + 1; j < array.Length; j++) //start with i+1 so it does not repeat i
-                {
-                    if (array[i] + array[j] == target) //if pair is found
-                    {
-                        answerArray[0] = i;// reassign to answer
-                        answerArray[1] = j;
-                        break;
-                    }
-                }
-            }
+        //    //for loop to go through every variation
+        //    for (int i = 0; i < array.Length; i++)
+        //    {
+        //        for (int j = i + 1; j < array.Length; j++) //start with i+1 so it does not repeat i
+        //        {
+        //            if (array[i] + array[j] == target) //if pair is found
+        //            {
+        //                answerArray[0] = i;// reassign to answer
+        //                answerArray[1] = j;
+        //                break;
+        //            }
+        //        }
+        //    }
 
-            //print answer
-            if (answerArray[0] == -1) //pair not found
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine($"\nNo two numbers add up to the target number: {target}\n");
-                Console.ForegroundColor = ConsoleColor.White;
-            }
-            else // pair found
-            {
-                Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine($"\nTarget Number: {target} can be found by adding the two numbers at indices [{answerArray[0]},{answerArray[1]}]\n");
-                Console.ForegroundColor = ConsoleColor.White;
+        //    //print answer
+        //    if (answerArray[0] == -1) //pair not found
+        //    {
+        //        Console.ForegroundColor = ConsoleColor.Red;
+        //        Console.WriteLine($"\nNo two numbers add up to the target number: {target}\n");
+        //        Console.ForegroundColor = ConsoleColor.White;
+        //    }
+        //    else // pair found
+        //    {
+        //        Console.ForegroundColor = ConsoleColor.Yellow;
+        //        Console.WriteLine($"\nTarget Number: {target} can be found by adding the two numbers at indices [{answerArray[0]},{answerArray[1]}]\n");
+        //        Console.ForegroundColor = ConsoleColor.White;
 
-            }
+        //    }
 
-            while (true)
-            {
-                // ask user if they want to try again
-                Console.WriteLine("\nWant to try again? (Y / N)");
-                char answer = char.Parse(Console.ReadLine().ToUpper());
+        //    while (true)
+        //    {
+        //        // ask user if they want to try again
+        //        Console.WriteLine("\nWant to try again? (Y / N)");
+        //        char answer = char.Parse(Console.ReadLine().ToUpper());
 
-                // wants to continue
-                if (answer == 'Y')
-                {
-                    goto StartPoint3;
-                }
+        //        // wants to continue
+        //        if (answer == 'Y')
+        //        {
+        //            goto StartPoint3;
+        //        }
 
-                // does not want to continue
-                else if (answer == 'N')
-                {
-                    break;
-                }
+        //        // does not want to continue
+        //        else if (answer == 'N')
+        //        {
+        //            break;
+        //        }
 
-                // invaid entry
-                else
-                {
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("\nEnter valid character");
-                    Console.ForegroundColor = ConsoleColor.White;
-                    continue;
-                }
-            }
-            #endregion
+        //        // invaid entry
+        //        else
+        //        {
+        //            Console.ForegroundColor = ConsoleColor.Red;
+        //            Console.WriteLine("\nEnter valid character");
+        //            Console.ForegroundColor = ConsoleColor.White;
+        //            continue;
+        //        }
+        //    }
+        //    #endregion
 
             #region Part4
-            Transition();
+            //Transition();
             Part(4);
-
+            StartPoint4:
             /*4. You are given a string s consisting only of uppercase English letters.
 
             You can apply some operations to this string where, in one operation, you can remove any occurrence of one of the substrings "AB" or "CD" from s.
@@ -218,7 +218,7 @@ namespace Wk_3_Challenge_Labs
             Input: s = "ABFCACDB"
             Output: 2
             Explanation: We can do the following operations:
-            - Remove the substring "ABFCACDB", so s = "FCACDB
+            - Remove the substring "ABFCACDB", so s = "FCACDB"
             - Remove the substring "FCACDB", so s = "FCAB".
             - Remove the substring "FCAB", so s = "FC".
 
@@ -230,6 +230,61 @@ namespace Wk_3_Challenge_Labs
             Output: 5
 
             Explanation: We cannot do any operations on the string so the length remains the same.*/
+
+            Console.WriteLine("\nEnter an string and I will remove 'AB' and 'CD'");
+            string s = Console.ReadLine().ToUpper();
+
+            Console.WriteLine($"The current string is: {s}\n");
+
+            while (s.Contains("AB") || s.Contains("CD"))
+            {
+                s = s.Replace("AB", "");
+                s = s.Replace("CD", "");
+
+                Console.WriteLine($"\nThe current string is: {s}");
+            }
+
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine($"\nThe resulting string '{s}' has a length of {s.Length}\n");
+            Console.ForegroundColor = ConsoleColor.White;
+
+            TryAgain:
+            try
+            {
+                while (true)
+                {
+                    // ask user if they want to try again
+                    Console.WriteLine("\nWant to try again? (Y / N)");
+                    char answer = char.Parse(Console.ReadLine().ToUpper());
+
+                    // wants to continue
+                    if (answer == 'Y')
+                    {
+                        goto StartPoint4;
+                    }
+
+                    // does not want to continue
+                    else if (answer == 'N')
+                    {
+                        break;
+                    }
+
+                    // invaid entry
+                    else
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("\nEnter valid character");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        continue;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                goto TryAgain;
+            }
+            
 
             #endregion
             ClosingMessage(); Console.ReadKey();
