@@ -55,6 +55,9 @@ namespace Wk_3_Challenge_Labs
             IsPalindrome("eye") → true
             IsPalindrome("home") → false*/
 
+            Console.WriteLine(Math.Round(6.5));
+            Console.WriteLine(Math.Round(11.5));
+
             Console.WriteLine("\nI can check if a word is a palindrome");
             Console.Write("Enter word: ");
             string input = Console.ReadLine().ToLower(); // takes input and converts to lower case
